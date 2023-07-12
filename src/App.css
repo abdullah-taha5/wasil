@@ -1,0 +1,65 @@
+html:lang(ar) {
+  overflow-x: hidden;
+}
+
+html:lang(ar) .breadcrumb-item + .breadcrumb-item::before {
+  float: right !important;
+  padding-left: 0.5rem !important;
+}
+html:lang(ar) .sidebar {
+  right: 0;
+}
+html:lang(ar) .sidebar.active ~ .home_content {
+  right: 270px;
+}
+@media (max-width: 567px) {
+  html:lang(ar) body {
+    overflow-x: hidden;
+  }
+  html:lang(ar) .home_content {
+    right: 0px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  html:lang(ar) .home_content {
+    right: 0px !important;
+  }
+  html:lang(ar) body {
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  html:lang(ar) .home_content {
+    right: 0px !important;
+  }
+}
+
+.scroll-btn {
+  position: fixed;
+  right: 20px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7603FE;
+  border-radius: 50%;
+  font-size: 25px;
+  transition: 0.5s bottom ease-in-out;
+  bottom: -50px;
+  cursor: pointer;
+
+}
+.scroll-btn.active {
+  bottom: 20px;
+}
+.tox-notifications-container {
+  display: none;
+}
+.color-main {
+  color: #7100FE !important;
+}
+.background-main {
+  background-color: #7100FE !important;
+}
